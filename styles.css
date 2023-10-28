@@ -1,0 +1,164 @@
+:root {
+  --red: #ff4d70;
+  --yellow: #ffe47f;
+  --orange: rgb(255, 149, 0);
+  --green: #349869;
+  --blue: #338fff;
+  --purple: #562d7f;
+  --pink: #ff8ed2;
+  --black: #2c2c2c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(37, 18, 52);
+  font-family: "Quicksand";
+  color: white;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-family: "DM Serif Display";
+  margin: 1rem;
+}
+
+.search {
+  margin-top: 2rem;
+}
+
+.genre {
+  margin: 1rem;
+}
+
+label {
+  font-size: 0.75rem;
+}
+
+.bookshelf {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: rgb(122, 73, 49);
+  width: 70%;
+  margin-top: 1rem;
+}
+
+.top-of-bookshelf {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.order {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.order-button {
+  border: none;
+  background-color: rgb(255, 209, 176);
+  border-radius: 3px;
+  padding: 0.25rem;
+  width: 60px;
+  font-family: "Quicksand";
+  color: rgb(54, 32, 21);
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}
+
+.order-button:hover {
+  background-color: rgb(255, 239, 214);
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 0.1rem;
+  align-items: flex-end;
+}
+
+.book {
+  display: flex;
+  padding: 0.25rem;
+  width: 70px;
+  height: 220px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.75rem;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  border-radius: 3px;
+}
+
+.book-title,
+.book-author {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.book-title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.book-color-red {
+  background-color: var(--red);
+  color: rgb(255, 179, 0);
+}
+
+.book-color-yellow {
+  background-color: var(--yellow);
+  color: #d09200;
+}
+
+.book-color-purple {
+  background-color: var(--purple);
+  color: #e6cdff;
+  width: 70px;
+  height: 180px;
+}
+
+.book-color-green {
+  background-color: var(--green);
+  color: #acffd8;
+}
+
+.book-color-orange {
+  background-color: var(--orange);
+  color: #8d2f00;
+}
+
+.book-color-blue {
+  background-color: var(--blue);
+  color: #003372;
+  width: 70px;
+  height: 180px;
+}
+
+.book-color-black {
+  background-color: var(--black);
+  color: rgb(209, 209, 209);
+  width: 50px;
+}
+
+.book-color-pink {
+  background-color: var(--pink);
+  color: #b82a73;
+  width: 50px;
+  height: 200px;
+}
