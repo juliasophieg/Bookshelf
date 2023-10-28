@@ -49,6 +49,11 @@ declare(strict_types=1); ?>
                     <input class="order-button" type="submit" name="order" value="author">
                 </form>
             </div>
+            <?php
+            if (isset($_GET['genre'])) { ?>
+                <form action="index.php">
+                    <input type="submit" value="Show all books" />
+                </form><?php } ?>
         </div>
         <div class="books">
             <?php
