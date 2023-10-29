@@ -50,7 +50,7 @@ declare(strict_types=1); ?>
                 </form>
             </div>
             <?php
-            if (isset($_GET['genre'])) { ?>
+            if (isset($_GET['genre']) || isset($_POST['search'])) { ?>
                 <form action="index.php">
                     <input type="submit" value="Show all books" />
                 </form><?php } ?>

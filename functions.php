@@ -16,18 +16,20 @@ function sortBooks(array $books)
 //Search function
 function searchBooks(array $books)
 {
-    if (isset($_POST['search']))
+    if (isset($_POST['search'])) {
+        $searchQuery = strtolower($_POST['search']);
 
         foreach ($books as $book) {
             $title = strtolower($book['title']);
             $author = strtolower($book['author']);
-            $searchQuery = strtolower($_POST['search']);
+
             if (str_contains($title, $searchQuery) || str_contains($author, $searchQuery)) { ?>
-            <div class="book book-color-<?= $book['color']; ?>">
-                <p class="book-title"><?= $book['title']; ?></p>
-                <p class="book-author"><?= $book['author']; ?></p>
-            </div>
+                <div class="book book-color-<?= $book['color']; ?>">
+                    <p class="book-title"><?= $book['title']; ?></p>
+                    <p class="book-author"><?= $book['author']; ?></p>
+                </div>
 <?php
             }
         }
+    }
 }
