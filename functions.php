@@ -1,6 +1,9 @@
 <?php
 
+declare(strict_types=1);
 require __DIR__ . '/booksarray.php';
+
+
 
 //Sort/order function
 function sortBooks(array $books)
@@ -17,7 +20,7 @@ function sortBooks(array $books)
 function searchBooks(array $books)
 {
     if (isset($_POST['search'])) {
-        $searchQuery = strtolower($_POST['search']);
+        $searchQuery = trim(htmlspecialchars(strtolower($_POST['search'])));
 
         foreach ($books as $book) {
             $title = strtolower($book['title']);

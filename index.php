@@ -57,7 +57,7 @@ declare(strict_types=1); ?>
         </div>
         <div class="books">
             <?php
-            require __DIR__ . '/bookshelf.php'; ?>
+            require __DIR__ . '/bookshelf.php'; ?> <!-- Bookshelf -->
         </div>
     </div>
 </body>
